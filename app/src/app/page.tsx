@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div>
+    <div className='container mx-auto bg-secondary'>
       <h1>Page</h1>
     </div>
   )
