@@ -22,14 +22,14 @@ export function Footer() {
         </div>
         <Separator className='my-4' />
         <div className='flex flex-col items-center justify-between gap-4 md:flex-row'>
-          <p className='text-center text-sm  text-white'>
-            © {new Date().getFullYear()} {novaWeb}. All rights reserved.
-          </p>
           <div className='flex gap-4 text-sm '>
             <CustomLink href='#' label='Terms of service' />
             <CustomLink href='#' label='Privacy Policy' />
             <CustomLink href='#' label='Cookie Policy' />
           </div>
+          <p className='text-center text-sm  text-white'>
+            © {new Date().getFullYear()} {novaWeb}. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
