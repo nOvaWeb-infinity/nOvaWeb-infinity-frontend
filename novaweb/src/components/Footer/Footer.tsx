@@ -6,10 +6,10 @@ import { novaWeb } from '@/app/constants/constants'
 import { CustomLink } from '@/components/Footer/components/CustomLink'
 import { Separator } from '@/components/ui/separator'
 
-export function Footer() {
+export const Footer = () => {
   return (
     <footer className='bg-primary mt-auto'>
-      <div className='container mx-auto px-4 py-8'>
+      <div className='mx-auto px-12 py-5'>
         <div className='flex flex-col items-center justify-between gap-4 md:flex-row'>
           <div className='flex items-center space-x-2'>
             <Image width={150} height={150} src='/logo-circle.png' alt='nova web logo' />
