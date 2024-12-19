@@ -15,11 +15,9 @@ export const NavItem: React.FC<NavItemProps> = ({ href, icon, label }) => {
       <Button variant='ghost' asChild>
         <Link href={href} className='flex items-center'>
           {icon}
-          <span className='ml-2'>{label}</span>
+          <span className='ml-2 text-xl'>{label}</span>
         </Link>
       </Button>
     </li>
   )
 }
-
-

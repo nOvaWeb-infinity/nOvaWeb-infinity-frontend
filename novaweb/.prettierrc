@@ -18,6 +18,7 @@
   "importOrderCaseInsensitive": true,
   "importOrderGroupNamespaceSpecifiers": true,
   "plugins": [
-    "@trivago/prettier-plugin-sort-imports"
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
   ]
 }
