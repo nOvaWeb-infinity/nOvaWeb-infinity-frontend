@@ -1,5 +1,11 @@
-import { HeroSection } from '@/components/HeroSection/HeroSection'
+import { HeroSection } from '@/components/HeroSection'
+import { PhilosophySection } from '@/components/PhilosophySection'
 
 export default function Page() {
-  return <HeroSection />
+  return (
+    <>
+      <HeroSection />
+      <PhilosophySection />
+    </>
+  )
 }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Gruppo } from 'next/font/google'
 
 import { Footer } from '@/components/Footer/Footer'
-import { Header } from '@/components/Header/Header'
+import { Header } from '@/components/Header'
 
 import './globals.css'
 
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${gruppo.variable}  antialiased flex flex-col min-h-screen`}>
+      <body className={`${gruppo.variable} flex min-h-screen flex-col antialiased`}>
         <Header /> {children} <Footer />
       </body>
     </html>
