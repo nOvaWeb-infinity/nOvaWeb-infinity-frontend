@@ -8,8 +8,8 @@ import { Separator } from '@/components/ui/separator'
 
 export const Footer = () => {
   return (
-    <footer className='bg-primary mt-auto'>
-      <div className='mx-auto px-12 py-5'>
+    <footer className='bg-blue-400 mt-auto'>
+      <div className='mx-auto px-12 py-4'>
         <div className='flex flex-col items-center justify-between gap-4 md:flex-row'>
           <div className='flex items-center space-x-2'>
             <Image width={150} height={150} src='/logo-circle.png' alt='nova web logo' />
