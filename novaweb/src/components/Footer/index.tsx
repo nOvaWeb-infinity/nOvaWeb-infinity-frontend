@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-import { novaWeb } from '@/app/constants/constants'
 import { CustomLink } from '@/components/Footer/components/CustomLink'
 import { Separator } from '@/components/ui/separator'
+import { novaWeb } from '@/constants/constants'
 
 export const Footer = () => {
   return (
