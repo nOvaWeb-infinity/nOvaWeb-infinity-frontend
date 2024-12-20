@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Gruppo } from 'next/font/google'
 
-import { Footer } from '@/components/Footer/Footer'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
 import './globals.css'

@@ -25,7 +25,7 @@ export const Footer = () => {
           <div className='flex gap-4 space-x-6 text-xl'>
             <CustomLink href='#' label='FAQ' />
           </div>
-          <p className='text-center text-xl text-white'>
+          <p className='text-center text-xl tracking-widest text-white'>
             © {new Date().getFullYear()} {novaWeb}. All rights reserved.
           </p>
         </div>
