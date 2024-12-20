@@ -6,9 +6,8 @@ export const PhilosophySection = () => {
   return (
     <section id='philosophy' className='py-16 lg:py-24 xl:py-32'>
       <div className='mx-auto px-6 lg:flex lg:space-x-8'>
-        {/* Texto de la filosofía */}
-        <Card className='w-full !border-0 border-none px-8 py-8 !shadow-none lg:w-1/2 lg:px-16'>
-          <CardContent>
+        <Card className='w-full !border-0 border-none py-8 pl-0 pr-8 !shadow-none lg:w-1/2 lg:pr-16'>
+          <CardContent className='pl-0'>
             <h2 className='mb-10 text-6xl font-bold'>Nuestra Filosofía</h2>
             <p className='mb-4 text-2xl'>
               En Novaweb Infinity creemos que cada proyecto es único, al igual que cada cliente. Nos apasiona crear
@@ -25,8 +24,6 @@ export const PhilosophySection = () => {
             </p>
           </CardContent>
         </Card>
-
-        {/* Imagen de la filosofía */}
         <div className='flex w-full justify-center lg:w-1/2 lg:justify-end'>
           <Image
             src='/ian.jpg'

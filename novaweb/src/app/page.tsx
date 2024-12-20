@@ -1,6 +1,8 @@
 import { HeroSection } from '@/components/HeroSection'
 import { PhilosophySection } from '@/components/PhilosophySection'
-import { projects, ProjectsSection } from '@/components/ProjectsSection'
+import { ProcessSection } from '@/components/ProcessSection'
+import { ProjectsSection } from '@/components/ProjectsSection'
+import { ReviewsSection } from '@/components/ReviewsSection'
 import { ServicesSection } from '@/components/ServicesSection'
 
 export default function Page() {
@@ -9,7 +11,9 @@ export default function Page() {
       <HeroSection />
       <PhilosophySection />
       <ServicesSection />
-      <ProjectsSection projects={projects} />
+      <ProjectsSection />
+      <ProcessSection />
+      <ReviewsSection />
     </>
   )
 }
