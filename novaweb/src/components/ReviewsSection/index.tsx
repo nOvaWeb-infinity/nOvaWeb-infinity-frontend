@@ -87,13 +87,13 @@ export const ReviewsSection = () => {
           <div className='absolute bottom-4 left-1/2 flex w-full -translate-x-1/2 transform justify-between px-4'>
             <button
               onClick={prevReview}
-              className='transform rounded-full bg-blue-400 p-4 text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-indigo-700 hover:shadow-2xl'
+              className='transform rounded-full bg-blue-400 p-4 text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-blue-400 hover:shadow-2xl'
             >
               <FaChevronLeft className='text-2xl' />
             </button>
             <button
               onClick={nextReview}
-              className='transform rounded-full bg-blue-400 p-4 text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-indigo-700 hover:shadow-2xl'
+              className='transform rounded-full bg-blue-400 p-4 text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-blue-400 hover:shadow-2xl'
             >
               <FaChevronRight className='text-2xl' />
             </button>
