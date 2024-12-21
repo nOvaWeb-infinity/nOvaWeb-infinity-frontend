@@ -34,7 +34,7 @@ export const ServicesSection = () => {
   ]
 
   return (
-    <section className='bg-gray-200 py-32'>
+    <section className='bg-gray-200 py-32' id='servicios'>
       <div className='mx-auto max-w-7xl px-6 text-center'>
         <h2 className='text-6xl font-bold text-gray-800'>Nuestros Servicios</h2>
         <p className='mt-4 text-3xl text-gray-600'>

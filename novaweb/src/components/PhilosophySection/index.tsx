@@ -11,7 +11,7 @@ export const PhilosophySection = () => {
   const isInView = useInView(ref)
 
   return (
-    <section id='philosophy' className='overflow-hidden py-16 lg:py-24 xl:py-32'>
+    <section id='nosotros' className='overflow-hidden py-16 lg:py-24 xl:py-32'>
       <motion.div
         className='mx-auto px-6 lg:flex lg:space-x-8'
         ref={ref}
