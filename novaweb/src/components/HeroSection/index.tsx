@@ -1,6 +1,6 @@
 export const HeroSection = () => {
   return (
-    <div className='bg-background-image relative flex h-screen items-center justify-center bg-cover bg-center'>
+    <div className='bg-background-image relative -mb-20 flex h-screen items-center justify-center bg-cover bg-center'>
       <div className='flex flex-col items-center justify-center px-4'>
         <h1 className='text-5xl font-black text-white sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem]'>
           n0vaWeb
@@ -13,12 +13,6 @@ export const HeroSection = () => {
         <p className='text-xl font-black tracking-widest text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
           Tu socio en innovación digital
         </p>
-        <a
-          href='#services'
-          className='mt-8 inline-block rounded-lg bg-primary px-8 py-4 text-xl font-semibold text-white shadow-lg transition-transform hover:scale-105'
-        >
-          Explorar nuestros servicios
-        </a>
       </div>
     </div>
   )

@@ -34,7 +34,7 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({ menuItems }) => {
         <MenubarContent className='shadow-l left-2 mr-2 space-y-2 rounded-lg bg-white p-4'>
           {menuItems.map((item, index) => (
             <MenubarItem key={index} className='flex justify-center'>
-              <Link href={item.href} className='flex items-center text-lg'>
+              <Link href={item.href} className='flex items-center text-lg font-semibold'>
                 {item.icon}
                 <span className='ml-2'>{item.label}</span>
               </Link>
