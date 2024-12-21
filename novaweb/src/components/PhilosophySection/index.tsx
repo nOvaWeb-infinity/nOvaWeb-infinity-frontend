@@ -1,11 +1,24 @@
+'use client'
+
+import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
+import { useRef } from 'react'
 
 import { Card, CardContent } from '@/components/ui/card'
 
 export const PhilosophySection = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   return (
-    <section id='philosophy' className='py-16 lg:py-24 xl:py-32'>
-      <div className='mx-auto px-6 lg:flex lg:space-x-8'>
+    <section id='philosophy' className='overflow-hidden py-16 lg:py-24 xl:py-32'>
+      <motion.div
+        className='mx-auto px-6 lg:flex lg:space-x-8'
+        ref={ref}
+        initial={{ opacity: 0, x: '100%' }}
+        animate={{ opacity: isInView ? 1 : 0, x: isInView ? '0%' : '100%' }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+      >
         <Card className='w-full !border-0 border-none py-8 pl-0 pr-8 !shadow-none lg:w-1/2 lg:pr-16'>
           <CardContent className='pl-0'>
             <h2 className='mb-10 text-6xl font-bold'>Nuestra Filosofía</h2>
@@ -33,7 +46,7 @@ export const PhilosophySection = () => {
             className='rounded-lg object-cover shadow-lg'
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
