@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export const PhilosophySection = () => {
   return (
-    <section id='philosophy' className='py-16 lg:py-24 xl:py-32'>
+    <section id='nosotros' className='py-16 lg:py-24 xl:py-32'>
       <div className='mx-auto px-6 lg:flex lg:space-x-8'>
         <Card className='w-full !border-0 border-none py-8 pl-0 pr-8 !shadow-none lg:w-1/2 lg:pr-16'>
           <CardContent className='pl-0'>

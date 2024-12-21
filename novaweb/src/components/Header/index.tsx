@@ -2,16 +2,17 @@
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { FaEnvelope, FaHome, FaInfoCircle, FaPhone, FaServicestack, FaTools, FaUsers } from 'react-icons/fa'
+import { FaEnvelope, FaTools, FaUsers } from 'react-icons/fa'
 
+import { BurgerMenu } from './components/BurgerMenu'
 import { NavItem } from './components/NavItem'
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 1000)
+      setIsScrolled(window.scrollY > 50)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -20,6 +21,12 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+  const menuItems = [
+    { label: 'Sobre Nosotros', href: '#nosotros', icon: <FaUsers /> },
+    { label: 'Servicios', href: '#servicios', icon: <FaTools /> },
+    { label: 'Contacto', href: '#contacto', icon: <FaEnvelope /> },
+  ]
 
   return (
     <header
@@ -35,11 +42,14 @@ export const Header = () => {
           alt='nova web logo'
         />
       </div>
-      <ul className='flex flex-wrap justify-end space-x-2 text-white'>
-        <NavItem href='/sobre-nosotros' icon={<FaUsers />} label='Sobre Nosotros' />
-        <NavItem href='/servicios' icon={<FaTools />} label='Servicios' />
-        <NavItem href='/contacto' icon={<FaEnvelope />} label='Contacto' />
+      <ul className='hidden flex-wrap justify-end space-x-2 text-white md:flex'>
+        {menuItems.map((item, index) => (
+          <NavItem key={index} {...item} />
+        ))}
       </ul>
+      <div className='absolute right-2 top-5 md:hidden'>
+        <BurgerMenu menuItems={menuItems} />
+      </div>
     </header>
   )
 }
