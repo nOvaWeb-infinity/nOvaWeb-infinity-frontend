@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export const ServicesSection = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref, { margin: '10% 0px' })
 
   const services = [
     {
@@ -45,9 +45,9 @@ export const ServicesSection = () => {
             <motion.div
               key={index}
               ref={ref}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0 }}
-              transition={{ duration: 1, ease: 'easeInOut', delay: index * 0.25 }}
+              initial={{ opacity: 0, scale: 0.25 }}
+              animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.25 }}
+              transition={{ duration: 0.5, ease: 'easeInOut', delay: index * 0.25 }}
             >
               <Card className='h-full w-full rounded-lg border bg-white p-8 shadow-md transition-shadow hover:shadow-lg'>
                 <CardHeader className='flex flex-col items-center'>
