@@ -11,13 +11,14 @@ import { StaffSection } from '@/components/StaffSection'
 export default function Page() {
   return (
     <>
+      {/* <HeroSection /> */}
       <HeroSection />
       <PhilosophySection />
       <ServicesSection />
       <ProjectsSection />
       <ProcessSection />
-      <ReviewsSection />
-      <StaffSection />
+      {/* <ReviewsSection />
+      <StaffSection /> */}
       <ContactSection />
       <CTASection />
     </>

@@ -29,18 +29,9 @@ export const Header: React.FC = () => {
   ]
 
   return (
-    <header
-      className={`fixed z-10 flex w-full items-center justify-between py-6 pl-16 pr-12 transition-colors duration-300 ${
-        isScrolled ? 'bg-blue-400 shadow-md' : 'bg-transparent'
-      }`}
-    >
+    <header className='fixed z-10 flex w-full items-center justify-between bg-gradient-to-br from-[#4A74D9] via-[#4A74D9] to-[#6A90E5] py-6 pl-16 pr-12 shadow-md transition-colors duration-300'>
       <div className='flex items-center'>
-        <Image
-          width={120}
-          height={120}
-          src={isScrolled ? '/logo-circle.png' : '/logo-circle-black01.png'}
-          alt='nova web logo'
-        />
+        <Image width={120} height={120} src='/images/logo-circle.png' alt='nova web logo' />
       </div>
       <ul className='hidden flex-wrap justify-end space-x-2 text-white md:flex'>
         {menuItems.map((item, index) => (

@@ -39,7 +39,7 @@ export const PhilosophySection = () => {
         </Card>
         <div className='flex w-full justify-center lg:w-1/2 lg:justify-end'>
           <Image
-            src='/ian.jpg'
+            src='/images/ian.jpg'
             alt='Nuestra Filosofía'
             width={1000}
             height={600}

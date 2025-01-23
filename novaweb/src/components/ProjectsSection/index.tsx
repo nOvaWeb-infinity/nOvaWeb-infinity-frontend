@@ -19,7 +19,7 @@ export const ProjectsSection = () => {
     {
       title: 'Proyecto 1',
       description: 'Sitio web para un negocio de moda.',
-      imageUrl: '/harpal.jpg',
+      imageUrl: '/images/harpal.jpg',
       client: 'Cliente A',
       solutions: 'Desarrollo de un e-commerce con carrito de compras y gestión de inventarios.',
       results: 'Aumento del 40% en ventas en los primeros 3 meses.',
@@ -27,7 +27,7 @@ export const ProjectsSection = () => {
     {
       title: 'Proyecto 2',
       description: 'Aplicación web para la gestión de proyectos internos.',
-      imageUrl: '/harpal.jpg',
+      imageUrl: '/images/harpal.jpg',
       client: 'Cliente B',
       solutions: 'Desarrollo de una plataforma interactiva con paneles de control y reportes.',
       results: 'Reducción del 30% en el tiempo de gestión de proyectos.',
@@ -35,7 +35,7 @@ export const ProjectsSection = () => {
     {
       title: 'Proyecto 3',
       description: 'Rediseño de sitio web para un restaurante.',
-      imageUrl: '/harpal.jpg',
+      imageUrl: '/images/harpal.jpg',
       client: 'Cliente C',
       solutions: 'Optimización del diseño y experiencia de usuario, integración con sistema de reservas.',
       results: 'Incremento del 25% en reservas online.',

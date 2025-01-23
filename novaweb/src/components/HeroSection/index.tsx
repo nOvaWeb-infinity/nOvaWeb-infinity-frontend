@@ -1,19 +1,26 @@
+import Image from 'next/image'
+
+import { rubikMonoOne } from '@/app/layout'
+
 export const HeroSection = () => {
   return (
-    <div className='bg-background-image relative -mb-20 flex h-screen items-center justify-center bg-cover bg-center'>
-      <div className='flex flex-col items-center justify-center px-4'>
-        <h1 className='text-5xl font-black text-white sm:text-7xl md:text-9xl lg:text-[10rem] xl:text-[12rem]'>
-          n0vaWeb
-        </h1>
-        <h1 className='mt-4 text-3xl font-black text-white sm:mt-6 sm:text-5xl md:mt-8 md:text-7xl lg:mt-12 lg:text-[6rem] xl:mt-16 xl:text-[8rem]'>
-          infinity
-        </h1>
+    <div className='bg-background-image relative flex min-h-screen items-center justify-center overflow-hidden'>
+      <div className='relative z-10 flex items-center justify-center'>
+        <div className='container flex flex-col items-center justify-center text-center'>
+          <div className='w-fit items-center space-y-48'>
+            <h1
+              className={`flex w-fit flex-col text-6xl font-bold text-white sm:text-7xl md:text-8xl lg:text-9xl ${rubikMonoOne.className}`}
+            >
+              NOVAWEB{' '}
+              <span className='rubik-one self-end bg-gradient-to-r from-[#3898FF] to-[#3898FF] bg-clip-text text-5xl text-transparent sm:text-6xl md:text-7xl lg:text-8xl'>
+                infinity
+              </span>
+            </h1>
+            <p className='text-2xl text-white/80 sm:text-3xl md:text-4xl lg:text-5xl'>Tu socio en innovación digital</p>
+          </div>
+        </div>
       </div>
-      <div className='absolute bottom-10 px-4 text-center'>
-        <p className='text-xl font-black tracking-widest text-white sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
-          Tu socio en innovación digital
-        </p>
-      </div>
+      <div className='absolute inset-0 bg-gradient-to-t from-transparent via-[#001a2c]/50 to-transparent' />
     </div>
   )
 }
