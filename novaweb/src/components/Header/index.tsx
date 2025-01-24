@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
   ]
 
   return (
-    <header className='fixed z-10 flex w-full items-center justify-between bg-gradient-to-br from-[#4A74D9] via-[#4A74D9] to-[#6A90E5] py-6 pl-16 pr-12 shadow-md transition-colors duration-300'>
+    <header className='fixed z-20 flex w-full items-center justify-between bg-gradient-to-br from-[#4A74D9] via-[#4A74D9] to-[#6A90E5] py-6 pl-16 pr-12 shadow-md transition-colors duration-300'>
       <div className='flex items-center'>
         <Image width={120} height={120} src='/images/logo-circle.png' alt='nova web logo' />
       </div>
